@@ -23,11 +23,20 @@
           <div class="currancy-info">&#36;</div>
           <span id="usd">----</span>
           <p>Гривен за доллар😒</p>
+          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#36;" class="calc-input"
+            oninput="convert(this, 'usd', 'uah_result_usd')">
+            <div class="equal">=</div>
+          <span class="result" id="uah_result_usd">0 Гривен</span>
         </div>
+
         <div class="currancy-row" id="euro">
-          <div class="currancy-info">&#8364</div>
+          <div class="currancy-info">&#8364;</div>
           <span id="eur">----</span>
           <p>Гривен за евро😃</p>
+          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#8364;" class="calc-input"
+            oninput="convert(this, 'eur', 'uah_result_eur')">
+            <div class="equal">=</div>
+          <span class="result" id="uah_result_eur">0 Гривен</span>
         </div>
       </div>
       <div class="currancy-inner">
@@ -36,11 +45,19 @@
           <div class="currancy-info">&#36;</div>
           <span id="usd_ro">----</span>
           <p>RON за доллар😒</p>
+          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#36;" class="calc-input"
+            oninput="convert(this, 'usd_ro', 'ron_result_usd')">
+            <div class="equal">=</div>
+          <span class="result" id="ron_result_usd">0 RON</span>
         </div>
+
         <div class="currancy-row" id="euro_ro">
-          <div class="currancy-info">&#8364</div>
+          <div class="currancy-info">&#8364;</div>
           <span id="eur_ro">----</span>
           <p>RON за евро😃</p>
+          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#8364;" class="calc-input" oninput="convert(this, 'eur_ro', 'ron_result_eur')">
+          <div class="equal">=</div>
+          <span class="result" id="ron_result_eur">0 RON</span>
         </div>
       </div>
     </div>

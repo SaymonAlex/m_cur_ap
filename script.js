@@ -159,3 +159,17 @@ window.addEventListener('resize', () => {
   canvas.width = window = window.innerWidth;
   canvas.height = window = window.innerHeight;
 });
+
+function convert(input, rateId, resultId) {
+  const rateSpan = document.getElementById(rateId);
+  const resultSpan = document.getElementById(resultId);
+  const amount = parseFloat(input.value);
+  const rate = parseFloat(rateSpan.innerText.replace(',', '.'));
+
+  if (!isNaN(amount) && !isNaN(rate)) {
+    const result = (amount * rate).toFixed(2);
+    resultSpan.innerText = resultId.includes('uah') ? `${result} Гривен` : `${result} RON`;
+  } else {
+    resultSpan.innerText = resultId.includes('uah') ? `0 Гривен` : `0 RON`;
+  }
+}

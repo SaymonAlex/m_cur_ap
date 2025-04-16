@@ -11,6 +11,7 @@ body{
   justify-content: center;
   height: 100vh;
   background: linear-gradient(45deg, #115, #125) no-repeat;
+  background-size: cover;
   user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -33,13 +34,12 @@ canvas {
   justify-content: center;
   flex-direction: column;
   width: 350px;
-  height: 350px;
   align-items: center;
   margin-top: 120px;
   border: 2px solid #ff0;
   padding: 10px;
   border-radius: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 h2 {
   color: #fff;
@@ -55,7 +55,7 @@ p {
 }
 .currancy-inner {
   position: relative;
-  border: 2p5x solid #114;
+  border: 2px solid #114;
   border-radius: 5px;
   width: 100%;
   padding: 5px;
@@ -73,6 +73,7 @@ p {
 }
 .currancy-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   border: 1px solid #fff;
@@ -95,4 +96,24 @@ span {
   font-size: 18px;
   margin-left: 5px;
   margin-right: 10px;
+}
+.calc-input {
+  width: 90px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.result {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+}
+.equal {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 15px;
 }
