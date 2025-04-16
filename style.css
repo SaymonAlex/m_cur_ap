@@ -9,9 +9,8 @@ html,
 body{
   display: flex;
   justify-content: center;
-  height: 100vh;
-  background: linear-gradient(45deg, #115, #125) no-repeat;
-  background-size: cover;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #115, #125);
   user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
