@@ -18,14 +18,17 @@
     <h2>Курс валют</h2>
     <div class="currancy-box">
       <div class="currancy-inner">
-        <div class="bank-name">Приват Банк</div>
+        <div class="bank-inner">
+          <img src="PB.png" class="bank_logo" alt="PB-Logo">
+          <div class="bank-name">Приват Банк</div>
+        </div>
         <div class="currancy-row" id="dollar">
           <div class="currancy-info">&#36;</div>
           <span id="usd">----</span>
           <p>Гривен за доллар😒</p>
-          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#36;" class="calc-input"
+          <input type="text" pattern="\d*" ; maxlength="8" placeholder="Введите &#36;" class="calc-input"
             oninput="convert(this, 'usd', 'uah_result_usd')">
-            <div class="equal">=</div>
+          <div class="equal">=</div>
           <span class="result" id="uah_result_usd">0 Гривен</span>
         </div>
 
@@ -33,21 +36,24 @@
           <div class="currancy-info">&#8364;</div>
           <span id="eur">----</span>
           <p>Гривен за евро😃</p>
-          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#8364;" class="calc-input"
+          <input type="text" pattern="\d*" ; maxlength="8" placeholder="Введите &#8364;" class="calc-input"
             oninput="convert(this, 'eur', 'uah_result_eur')">
-            <div class="equal">=</div>
+          <div class="equal">=</div>
           <span class="result" id="uah_result_eur">0 Гривен</span>
         </div>
       </div>
       <div class="currancy-inner">
-        <div class="bank-name">ING Bank</div>
+        <div class="bank-inner">
+          <img src="ING.png" class="bank_logo" alt="PB-Logo">
+          <div class="bank-ing">ING Bank</div>
+        </div>
         <div class="currancy-row" id="dollar_ro">
           <div class="currancy-info">&#36;</div>
           <span id="usd_ro">----</span>
           <p>RON за доллар😒</p>
-          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#36;" class="calc-input"
+          <input type="text" pattern="\d*" ; maxlength="8" placeholder="Введите &#36;" class="calc-input"
             oninput="convert(this, 'usd_ro', 'ron_result_usd')">
-            <div class="equal">=</div>
+          <div class="equal">=</div>
           <span class="result" id="ron_result_usd">0 RON</span>
         </div>
 
@@ -55,7 +61,8 @@
           <div class="currancy-info">&#8364;</div>
           <span id="eur_ro">----</span>
           <p>RON за евро😃</p>
-          <input type="text" pattern="\d*"; maxlength="8" placeholder="Введите &#8364;" class="calc-input" oninput="convert(this, 'eur_ro', 'ron_result_eur')">
+          <input type="text" pattern="\d*" ; maxlength="8" placeholder="Введите &#8364;" class="calc-input"
+            oninput="convert(this, 'eur_ro', 'ron_result_eur')">
           <div class="equal">=</div>
           <span class="result" id="ron_result_eur">0 RON</span>
         </div>

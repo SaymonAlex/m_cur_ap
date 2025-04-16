@@ -19,7 +19,7 @@ function renderRates(data) {
   usdElement.innerText = usdRate;
   eurElement.innerText = eurRate;
 }
-
+setInterval(getCurrencies, 300000);
 getCurrencies();
 
 
@@ -58,8 +58,10 @@ async function fetchINGRates() {
     console.error("Ошибка при получении данных:", error);
   }
 }
-
+setInterval(fetchINGRates, 300000);
 fetchINGRates();
+
+
 // Animation BG
 const canvas = document.getElementById('particleCanvas');
 const ctx = canvas.getContext('2d');
