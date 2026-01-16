@@ -57,7 +57,7 @@ function renderRates(data) {
   usdElement.innerText = usdRate;
   eurElement.innerText = eurRate;
 }
-setInterval(getCurrencies, 300000);
+setInterval(getCurrencies, 60000);
 getCurrencies();
 
 
@@ -95,7 +95,7 @@ async function fetchRates() {
 }
 
 fetchRates();
-setInterval(fetchRates, 300000); // обновление каждые 5 минут
+setInterval(fetchRates, 60000); // обновление каждые 5 минут
 
 // -----------Full Screen--------------
 const full_screen = document.querySelector('body');
