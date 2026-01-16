@@ -97,8 +97,19 @@ async function fetchRates() {
 fetchRates();
 setInterval(fetchRates, 300000); // обновление каждые 5 минут
 
-
-
+// -----------Full Screen--------------
+const full_screen = document.querySelector('body');
+full_screen.addEventListener('dblclick', () => {
+  if (document.documentElement.requestFullscreen) {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        console.error(`Errror ${err}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
+});
 
 
 // Animation BG
