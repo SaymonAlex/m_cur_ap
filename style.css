@@ -34,7 +34,7 @@ body {
   background: #031321;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 2px silid #fff;
+  border-top: 2px solid #fff;
 }
 .container .update_app {
   display: none;
