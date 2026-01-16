@@ -6,7 +6,9 @@
   <title>Курс Валют</title>
   <link rel="icon" href="currancy.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="./manifest.json">
 </head>
 
 <body>
@@ -16,6 +18,10 @@
   </div>
   <div class="container">
     <h2>Курс валют</h2>
+    <div class="update_app" id="update_app">
+      <div class="text_update">➡ Доступно Обновление ⬅</div>
+      <div class="but_update"></div>
+    </div>
     <div class="currancy-box">
       <div class="currancy-inner">
         <div class="bank-inner">
@@ -31,7 +37,6 @@
           <div class="equal">=</div>
           <span class="result" id="uah_result_usd">0 Гривен</span>
         </div>
-
         <div class="currancy-row" id="euro">
           <div class="currancy-info">&#8364;</div>
           <span id="eur">----</span>
@@ -42,6 +47,7 @@
           <span class="result" id="uah_result_eur">0 Гривен</span>
         </div>
       </div>
+
       <div class="currancy-inner">
         <div class="bank-inner">
           <img src="ING.png" class="bank_logo" alt="PB-Logo">
@@ -56,7 +62,6 @@
           <div class="equal">=</div>
           <span class="result" id="ron_result_usd">0 RON</span>
         </div>
-
         <div class="currancy-row" id="euro_ro">
           <div class="currancy-info">&#8364;</div>
           <span id="eur_ro">----</span>
@@ -69,7 +74,12 @@
       </div>
     </div>
   </div>
-  <script src="script.js" defer></script>
+  <script src="app.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
 </body>
 
 </html>

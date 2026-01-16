@@ -5,6 +5,21 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa5b1;
+  --accent: #2dd4bf;
+  --glass: rgba(255, 255, 255, 0.03);
+  --background-color: #07070f;
+  --third-color: #113156;
+  --primary-color: #fcbb5a;
+  --glow-color: #ff5031;
+  /* --primary-color: #00ffea;
+      --glow-color: #00f6ff; */
+}
+
 html,
 body {
   margin: 0;
@@ -20,9 +35,39 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+}
+.container .update_app {
+  display: none;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--glow-color);
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 5px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, .25), inset 2px 2px 5px rgba(255, 255, 255, .35), inset -3px -3px 5px rgba(0, 0, 0, .5);
+}
+
+.container .update_app:active {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: 2px 2px 6px #555
+}
+
+.container .but_update {
+  background: url("update.png") center / contain no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.container .text_update {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  text-align: center;
 }
 canvas {
     top: 0;
