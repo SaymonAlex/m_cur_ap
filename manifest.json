@@ -1,11 +1,19 @@
 {
+  "id": "/smart-currancy",
   "name": "My Currancy",
   "short_name": "Конвертер валют",
+  "description": "Веб-интерфейс Обменник",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#0b1220",
   "theme_color": "#113156",
+  "lang": "ru",
+  "categories": [
+    "smart-currancy",
+    "iot"
+  ],
   "icons": [
     {
       "src": "./icons/icon-192.png",
